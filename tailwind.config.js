@@ -2,7 +2,11 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			backgroundColor: {
+				navbar: '#1F1F1F'
+			}
+		}
 	},
 	plugins: [require('rippleui')],
 	rippleui: {
