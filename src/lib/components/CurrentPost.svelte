@@ -13,18 +13,16 @@
 			</div>
 		</div>
 	</div>
-	<div class=" max-w-full flex flex-col gap-y-8 justify-stretch">
+	<div class=" max-w-full flex flex-col gap-y-8">
 		<h2 class="text-3xl mt-16 lg:mt-0">Recent Post</h2>
-		<div class=" flex-1 flex flex-col justify-between gap-y-4">
+		<div class=" flex-1 flex flex-col gap-y-4 justify-between">
 			{#each [1, 2, 3] as x}
 				<div class="flex gap-x-4">
-					<div class=" w-1/3">
-						<img
-							src="/img/camp.jpg"
-							alt="card-img"
-							class="aspect-square sm:aspect-[4/3] rounded-xl object-cover"
-						/>
-					</div>
+					<img
+						src="/img/camp.jpg"
+						alt="card-img"
+						class="aspect-square sm:aspect-[4/3] rounded-xl w-1/3 object-cover"
+					/>
 					<div class="w-2/3 md:flex-[3] lg:flex-[2] flex flex-col justify-between">
 						<div>
 							<h2 class="card-header text-2xl mb-2 line-clamp-1 md:line-clamp-2">
