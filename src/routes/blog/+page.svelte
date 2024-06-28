@@ -1,7 +1,7 @@
 <script lang="ts">
 	import CardPost from '$lib/components/ui/CardPost.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Navbar from '$lib/components/ui/Navbar.svelte';
+	import Footer from '$lib/components/ui/Footer.svelte';
 	import { onMount } from 'svelte';
 
 	let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
