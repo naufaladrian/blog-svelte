@@ -1,5 +1,5 @@
 <footer
-	class="flex flex-col items-center justify-center py-14 mt-12 w-[90%] mx-auto border-t border-black"
+	class="flex flex-col font-kaisei items-center justify-center py-14 mt-12 w-[90%] mx-auto border-t border-black"
 >
 	<h1 class="text-3xl font-bold mb-7">MY JOURNEY</h1>
 	<div class="flex gap-10 md:gap-32 font-medium text-xl mb-7">

@@ -5,6 +5,10 @@ export default {
 		extend: {
 			backgroundColor: {
 				navbar: '#1F1F1F'
+			},
+			fontFamily: {
+				kaisei: ['Kaisei HarunoUmi', 'serif'],
+				inter: ['Inter', 'sans-serif']
 			}
 		}
 	},
