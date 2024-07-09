@@ -4,7 +4,7 @@
 
 	// Initial values for the post (you can replace these with actual data)
 	let initialTitle = 'Travel Post 1';
-	let initialCategory = 'Category 1';
+	let initialCategory = 'Traveling';
 	let initialImage = ''; // URL or path to the image if available
 	let initialContent = 'Sample content...';
 
@@ -14,7 +14,7 @@
 	let image = initialImage;
 	let content = initialContent;
 
-	const categories = ['Category 1', 'Category 2', 'Category 3']; // Sample categories
+	const categories = ['Traveling', 'Camping', 'Hiking']; // Sample categories
 
 	async function updatePost() {
 		const result = await Swal.fire({
@@ -63,7 +63,7 @@
 </script>
 
 <div class="flex justify-between items-center mt-4">
-	<h1 class="text-4xl font-bold text-blue-600 mb-4">Edit Post</h1>
+	<h1 class="text-4xl font-bold text-blue-600 mb-4">Edit Post ID : 01</h1>
 </div>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg border border-gray-200">
 	<form class="p-6 bg-white rounded-lg shadow-md" on:submit|preventDefault={updatePost}>

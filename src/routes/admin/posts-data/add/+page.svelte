@@ -7,9 +7,19 @@
 	let image = '';
 	let content = '';
 
-	const categories = ['Category 1', 'Category 2', 'Category 3']; // Sample categories
+	const categories = ['Traveling', 'Camping', 'Hiking']; // Sample categories
 
 	async function addPost() {
+		if (!title || !category || !image || !content) {
+			await Swal.fire({
+				title: 'Error!',
+				text: 'All fields must be filled out!',
+				icon: 'error',
+				confirmButtonText: 'Ok'
+			});
+			return;
+		}
+
 		const result = await Swal.fire({
 			title: 'Are you sure?',
 			text: 'Do you want to add this post?',

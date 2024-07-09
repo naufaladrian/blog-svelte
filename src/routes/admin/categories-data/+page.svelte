@@ -52,7 +52,7 @@
 <div class="flex justify-between items-center mt-4">
 	<h1 class="text-4xl font-bold text-blue-600 mb-4">Categories</h1>
 	<a
-		href=""
+		href="/admin/categories-data/add"
 		class="font-medium bg-blue-600 px-4 py-2 text-base rounded-md shadow text-white hover:underline"
 		>Create New Category</a
 	>
@@ -74,7 +74,9 @@
 					>
 					<td class="px-6 py-4">{category.name}</td>
 					<td class="px-6 py-4">
-						<a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+						<a href="/admin/categories-data/edit" class="font-medium text-blue-600 hover:underline"
+							>Edit</a
+						>
 						<button
 							class="font-medium text-red-600 hover:underline"
 							on:click={() => deleteModal(category.id)}>Delete</button

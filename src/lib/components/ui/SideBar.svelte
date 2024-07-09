@@ -1,5 +1,22 @@
 <script>
 	import { writable } from 'svelte/store';
+	import Swal from 'sweetalert2';
+
+	function handleLogout() {
+		Swal.fire({
+			title: 'Are you sure?',
+			text: 'Do you want to logout?',
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonText: 'Yes, logout!',
+			cancelButtonText: 'No, cancel!'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				// Handle logout
+				window.location.href = '/';
+			}
+		});
+	}
 
 	let expand = writable(false);
 </script>
@@ -15,7 +32,7 @@
 			: ''} lg:hidden text-white text-4xl top-5 -right-12 cursor-pointer"
 		on:click={() => expand.update((n) => !n)}
 	>
-		<i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+		<i class="bi bi-filter-left px-2 bg-blue-600 rounded-md"></i>
 	</span>
 	<div class="p-2 w-[300px] overflow-y-auto text-center bg-white shadow h-screen">
 		<div class="text-gray-900 text-xl">
@@ -45,12 +62,13 @@
 				</a>
 
 				<hr class="my-2 text-blue-600" />
-				<div
+				<a
+					href="/admin/profile"
 					class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-gray-600 hover:text-white hover:bg-blue-600"
 				>
 					<i class="bi bi-person-circle"></i>
 					<span class="text-[15px] ml-4">Profile</span>
-				</div>
+				</a>
 				<div
 					class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-gray-600 hover:text-white hover:bg-blue-600"
 				>

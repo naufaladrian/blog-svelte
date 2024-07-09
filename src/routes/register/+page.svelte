@@ -7,6 +7,7 @@
 		// Mengambil nilai dari input
 		const formData = new FormData(event.target);
 		const username = formData.get('username');
+		const email = formData.get('email');
 		const password = formData.get('password');
 		const confirmpass = formData.get('confirmpass');
 
@@ -49,6 +50,15 @@
 			id="username"
 			name="username"
 			placeholder="Enter your username"
+			required
+		/>
+		<label for="email" class="text-sm mb-2">Email</label>
+		<input
+			type="email"
+			class="mb-4 w-[300px] rounded-full py-2 px-6 text-gray-500"
+			id="email"
+			name="email"
+			placeholder="Enter your email"
 			required
 		/>
 		<label for="password" class="text-sm mb-2">Password</label>
