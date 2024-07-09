@@ -32,6 +32,9 @@
   },
   "type": "module",
   "dependencies": {
-    "rippleui": "^1.12.1"
+    "datatables.net-dt": "^2.0.8",
+    "jquery": "^3.7.1",
+    "rippleui": "^1.12.1",
+    "sweetalert2": "^11.12.2"
   }
 }

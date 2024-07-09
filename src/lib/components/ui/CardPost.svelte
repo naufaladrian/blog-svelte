@@ -1,4 +1,13 @@
-<div class="card rounded-none shadow-none max-w-[600px] min-w-[300px] font-inter">
+<script>
+	const handleDetail = () => {
+		window.location.href = '/blog/detail';
+	};
+</script>
+
+<div
+	class="card rounded-none shadow-none max-w-[600px] min-w-[300px] font-inter cursor-pointer"
+	on:click={handleDetail}
+>
 	<img src="/img/camp.jpg" alt="card-img" class="aspect-[4/3] object-cover" />
 	<div class="card-body p-0 my-4">
 		<h2 class="card-header text-2xl">My Peaceful Forest Camping Adventure</h2>

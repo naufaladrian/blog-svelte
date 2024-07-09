@@ -9,10 +9,11 @@
 			From exploring new places to moments of self-reflection. Join me on this journey, and let's navigate
 			life's paths together.
 		</p>
-		<button
+		<a
 			type="button"
+			href="#currentpost"
 			class="btn bg-white text-black font-bold text-xl rounded-none font-inter px-6 py-4"
-			>START EXPLORING</button
+			>START EXPLORING</a
 		>
 	</div>
 </section>

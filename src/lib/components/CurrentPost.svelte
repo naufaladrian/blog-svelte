@@ -1,4 +1,4 @@
-<section class="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-6 px-7 md:px-20">
+<section class="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-6 px-7 md:px-20" id="currentpost">
 	<div class="card border border-black min-w-[90%] p-4">
 		<img src="/img/camp.jpg" alt="card-img" class="aspect-[4/3] rounded-t-xl object-cover" />
 		<div class="card-body p-0">
